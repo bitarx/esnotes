@@ -1,0 +1,69 @@
+
+@charset "UTF-8";
+
+section#contents_area article#sidebar h4,
+section#banner_area {
+	background-color: #e00024;
+}
+
+section#contents_area article div.sub_title,
+div.list_property h4 {
+	border-left: 2px solid #e00024;
+}
+
+div.detail_tab ul#tabMenu li a.active {
+	border-top: 2px solid #e00024;
+}
+
+div.detail_tab ul#tabMenu li a.active,
+div.side_area ul li a,
+div.side_search dl dt,
+div.list_paging ul li,
+div.top_title,
+section#category_area,
+.flex-control-paging li a.flex-active,
+section#contents_area article div.title {
+	background:rgba(224,0,36,0.2);
+}
+
+div.side_recommend ul li a dl dt,
+div.side_new ul li a dl dt,
+div.list_paging ul li a,
+section#search_area {
+	background:rgba(224,0,36,0.4);
+}
+
+div.detail_comment a.btn,
+div.detail_intro a.btn,
+div.top_rental ul li a dl dt {
+	background:rgba(224,0,36,0.6);
+}
+
+header,
+nav {
+	border-color: #e00024;
+}
+
+div.detail_tab ul#tabMenu li a.active,
+div.list_paging ul li.prev a,
+div.list_paging ul li.next a,
+div.top_title span,
+div.top_rental ul li a dl dd span.btn:before,
+section#link_area div ul li a:before {
+	color: #e00024;
+}
+
+@media only screen and (min-width: 700px) {
+
+/* ↓ 変更不要 ↓ */
+header {
+	border-color: #dfdfdf;
+}
+/* ↑ 変更不要 ↑ */
+
+
+section#title_area {
+	background-color: #e00024;
+}
+
+}
