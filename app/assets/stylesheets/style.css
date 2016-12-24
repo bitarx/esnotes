@@ -51,7 +51,7 @@ section#search_area {
 	text-align: center;
 	overflow: hidden;
 	margin: 0px;
-	padding: 15px 0px 15px 0px;	
+	padding: 15px 0px 15px 0px;
 }
 section#search_area div {
 	width: 90%;
@@ -233,7 +233,7 @@ div.top_rental ul li a dl dd ol li {
 	line-height: 2em;
 	text-indent: 25px;
 	border-bottom: 1px dotted #333333;
-	background-image: url(../../commons/images/bukken_mansion_icon.png);
+	background-image: url(../../images/commons/bukken_mansion_icon.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 	color: #333333;
@@ -243,12 +243,12 @@ div.top_rental ul li a dl dd ol li {
 	padding: 0px;
 }
 div.top_rental ul li a dl dd ol li:last-child {
-	background-image: url(../../commons/images/bukken_toho_icon.png);
+	background-image: url(../../images/commons/bukken_toho_icon.png);
 	background-repeat: no-repeat;
 	background-position: left center;
 }
 div.top_rental ul li a dl dd img {
-	width: 100%; 
+	width: 100%;
 	height: auto;
 	margin: 0px 0px 5px 0px;
 	padding: 0px;
@@ -471,7 +471,7 @@ section#contents_area article#sidebar ul li img {
 
 
 @media only screen and (min-width: 460px) {
-	
+
 }
 
 @media only screen and (min-width: 700px) {
@@ -533,7 +533,7 @@ section#search_area {
 	text-align: center;
 	overflow: hidden;
 	margin: 0px 0px 50px 0px;
-	padding: 20px 0px 20px 0px;	
+	padding: 20px 0px 20px 0px;
 }
 section#search_area div {
 	width: 95%;
@@ -744,7 +744,7 @@ div.top_rental ul li a dl dd ol li:last-child {
 	background-position: left center;
 }
 div.top_rental ul li a dl dd img {
-	width: 100%; 
+	width: 100%;
 	height: auto;
 	margin: 0px 0px 5px 0px;
 	padding: 0px;
@@ -783,7 +783,7 @@ div.top_information ul li:last-child {
 	padding-bottom: 0px;
 }
 div.top_information ul li a {
-	display: block; 
+	display: block;
 }
 div.top_information ul li dl {
 	width: 100%;
@@ -1055,7 +1055,7 @@ section#search_area {
 	text-align: center;
 	overflow: hidden;
 	margin: 0px 0px 50px 0px;
-	padding: 20px 0px 20px 0px;	
+	padding: 20px 0px 20px 0px;
 }
 section#search_area div {
 	width: 960px;
@@ -1269,7 +1269,7 @@ div.top_rental ul li a dl dd ol li:last-child {
 	background-position: left center;
 }
 div.top_rental ul li a dl dd img {
-	width: 100%; 
+	width: 100%;
 	height: auto;
 	margin: 0px 0px 5px 0px;
 	padding: 0px;
@@ -1315,7 +1315,7 @@ div.top_information ul li:last-child {
 	padding-bottom: 0px;
 }
 div.top_information ul li a {
-	display: block; 
+	display: block;
 }
 
 
