@@ -13,5 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-= require function
-= require jquery.flexslider-min
+//= require common
+//= require jquery.flexslider-min
