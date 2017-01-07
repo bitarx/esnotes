@@ -145,150 +145,80 @@
 						</li>
 					</ul>
 				</div>
-				<div class="list_property">
-					<h4>鈴木コーポ</h4>
-					<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
-					<ul>
-						<li>
-							<dl>
-								<dt>住所</dt>
-								<dd>東京都北区赤羽西４丁目</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>交通</dt>
-								<dd>
-									京浜東北線「赤羽」駅 徒歩7分<br>
-									南北線「赤羽岩淵」駅 徒歩15分<br>
-									京浜東北線「東十条」駅 徒歩17分
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>築年</dt>
-								<dd>築41年</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>階数</dt>
-								<dd>2階建</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>構造</dt>
-								<dd>軽量鉄骨</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>向き</dt>
-								<dd>南</dd>
-							</dl>
-						</li>
-					</ul>
-					<div>
-						<ol>
-							<li>賃料</li>
-							<li>間取り</li>
-							<li>専有面積</li>
-							<li>所在階</li>
-							<li>詳細</li>
-							<li>検討リスト</li>
-						</ol>
+				<% @rentals.each do |rental| %>
+					<div class="list_property">
+						<h4><%= rental.name %></h4>
+						<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
 						<ul>
-							<li><strong>3.7万円</strong></li>
-							<li>1R</li>
-							<li>15.18㎡</li>
-							<li>5階</li>
-							<li><a href="#">詳細を見る</a></li>
-							<li><a href="#">追加する</a></li>
+							<li>
+								<dl>
+									<dt>住所</dt>
+									<dd>東京都北区赤羽西４丁目</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>交通</dt>
+									<dd>
+										京浜東北線「赤羽」駅 徒歩7分<br>
+										南北線「赤羽岩淵」駅 徒歩15分<br>
+										京浜東北線「東十条」駅 徒歩17分
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>築年</dt>
+									<dd>築41年</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>階数</dt>
+									<dd>2階建</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>構造</dt>
+									<dd>軽量鉄骨</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>向き</dt>
+									<dd>南</dd>
+								</dl>
+							</li>
 						</ul>
-						<ul>
-							<li><strong>3.7万円</strong></li>
-							<li>1R</li>
-							<li>15.18㎡</li>
-							<li>5階</li>
-							<li><a href="#">詳細を見る</a></li>
-							<li><a href="#">追加する</a></li>
-						</ul>
+						<div>
+							<ol>
+								<li>賃料</li>
+								<li>間取り</li>
+								<li>専有面積</li>
+								<li>所在階</li>
+								<li>詳細</li>
+								<li>検討リスト</li>
+							</ol>
+							<ul>
+								<li><strong>3.7万円</strong></li>
+								<li>1R</li>
+								<li>15.18㎡</li>
+								<li>5階</li>
+								<li><a href="#">詳細を見る</a></li>
+								<li><a href="#">追加する</a></li>
+							</ul>
+							<ul>
+								<li><strong>3.7万円</strong></li>
+								<li>1R</li>
+								<li>15.18㎡</li>
+								<li>5階</li>
+								<li><a href="#">詳細を見る</a></li>
+								<li><a href="#">追加する</a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="list_property">
-					<h4>鈴木コーポ</h4>
-					<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
-					<ul>
-						<li>
-							<dl>
-								<dt>住所</dt>
-								<dd>東京都北区赤羽西４丁目</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>交通</dt>
-								<dd>
-									京浜東北線「赤羽」駅 徒歩7分<br>
-									南北線「赤羽岩淵」駅 徒歩15分<br>
-									京浜東北線「東十条」駅 徒歩17分
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>築年</dt>
-								<dd>築41年</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>階数</dt>
-								<dd>2階建</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>構造</dt>
-								<dd>軽量鉄骨</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>向き</dt>
-								<dd>南</dd>
-							</dl>
-						</li>
-					</ul>
-					<div>
-						<ol>
-							<li>賃料</li>
-							<li>間取り</li>
-							<li>専有面積</li>
-							<li>所在階</li>
-							<li>詳細</li>
-							<li>検討リスト</li>
-						</ol>
-						<ul>
-							<li><strong>3.7万円</strong></li>
-							<li>1R</li>
-							<li>15.18㎡</li>
-							<li>5階</li>
-							<li><a href="#">詳細を見る</a></li>
-							<li><a href="#">追加する</a></li>
-						</ul>
-						<ul>
-							<li><strong>3.7万円</strong></li>
-							<li>1R</li>
-							<li>15.18㎡</li>
-							<li>5階</li>
-							<li><a href="#">詳細を見る</a></li>
-							<li><a href="#">追加する</a></li>
-						</ul>
-					</div>
-				</div>
+				<% end %>
 				<div class="list_property">
 					<h4>鈴木コーポ</h4>
 					<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
