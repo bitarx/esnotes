@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja" xmlns:fb="http://ogp.me/ns/fb#">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>〇〇〇不動産</title>
-		<meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト">
-		<meta name="keywords" content="キーワード,キーワード,キーワード">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=yes">
-		<meta name="format-detection" content="telephone=no">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script>
-			$(window).load(function() {
-			  $('.flexslider').flexslider({
-				animation: "fade",
-				slideshow: true,
-				directionNav: false
-			  });
-			});
-		</script>
-	</head>
 	<body>
 		<section id="title_area">
 			<div>
@@ -68,20 +47,20 @@
 		<section id="main_area">
 			<div class="flexslider">
 				<ul class="slides">
-					<li><img src="<%= image_tag 'slide_sample.png' %>"></li>
-					<li><img src="top/images/slide_sample.png"></li>
-					<li><img src="top/images/slide_sample.png"></li>
-					<li><img src="top/images/slide_sample.png"></li>
-					<li><img src="top/images/slide_sample.png"></li>
+					<li><%= image_tag 'top/slide_sample.png' %></li>
+					<li><%= image_tag 'top/slide_sample.png' %></li>
+					<li><%= image_tag 'top/slide_sample.png' %></li>
+					<li><%= image_tag 'top/slide_sample.png' %></li>
+					<li><%= image_tag 'top/slide_sample.png' %></li>
 				</ul>
 			</div>
 		</section>
 		<section id="category_area">
 			<div>
 				<ul>
-					<li><a href="#"><img src="top/images/category_bnr_railroad.png" width="310" height="100"></a></li>
-					<li><a href="#"><img src="top/images/category_bnr_area.png" width="310" height="100"></a></li>
-					<li><a href="#"><img src="top/images/category_bnr_map.png" width="310" height="100"></a></li>
+					<li><a href="#"><%= image_tag 'top/category_bnr_railroad.png', :width => '310', :height => '100' %></a></li>
+					<li><a href="#"><%= image_tag 'top/category_bnr_area.png', :width => '310', :height => '100' %></a></li>
+					<li><a href="#"><%= image_tag 'top/category_bnr_map.png', :width => '310', :height => '100' %></a></li>
 				</ul>
 			</div>
 		</section>
@@ -401,11 +380,11 @@
 				</div>
 				<div class="top_category">
 					<ul>
-						<li><a href="#"><%= image_tag 'category_image_shikikin.png', :width => '126', :height => '126' %></a></li>
-						<li><a href="#"><%= image_tag 'category_image_security.png', :width => '126', :height => '126' %></a></li>
-						<li><a href="#"><%= image_tag 'category_image_10manyen.png', :width => '126', :height => '126' %></a></li>
-						<li><a href="#"><%= image_tag 'category_image_chuukai.png', :width => '126', :height => '126' %></a></li>
-						<li><a href="#"><%= image_tag 'category_image_hoshounin.png', :width => '126', :height => '126' %></a></li>
+						<li><a href="#"><%= image_tag 'top/category_image_shikikin.png', :width => '126', :height => '126' %></a></li>
+						<li><a href="#"><%= image_tag 'top/category_image_security.png', :width => '126', :height => '126' %></a></li>
+						<li><a href="#"><%= image_tag 'top/category_image_10manyen.png', :width => '126', :height => '126' %></a></li>
+						<li><a href="#"><%= image_tag 'top/category_image_chuukai.png', :width => '126', :height => '126' %></a></li>
+						<li><a href="#"><%= image_tag 'top/category_image_hoshounin.png', :width => '126', :height => '126' %></a></li>
 					</ul>
 				</div>
 				<div class="top_title">
@@ -417,9 +396,10 @@
 				</div>
 				<div class="top_voice">
 					<ul>
-						<li><a href="#"><img src="top/images/voice_image_sample.png" width="216" height="162"><strong>○.○様<span>[2016/02/01]</span></strong><span>○○○○店ご利用</span></a></li>
-						<li><a href="#"><img src="top/images/voice_image_sample.png" width="216" height="162"><strong>○.○様<span>[2016/02/01]</span></strong><span>○○○○店ご利用</span></a></li>
-						<li><a href="#"><img src="top/images/voice_image_sample.png" width="216" height="162"><strong>○.○様<span>[2016/02/01]</span></strong><span>○○○○店ご利用</span></a></li>
+						<li><a href="#"><%= image_tag 'top/voice_image_sample.png', :width => '216', :height => '162' %>
+						<strong>○.○様<span>[2016/02/01]</span></strong><span>○○○○店ご利用</span></a></li>
+						<li><a href="#"><%= image_tag 'top/voice_image_sample.png', :width => '216', :height => '162' %><strong>○.○様<span>[2016/02/01]</span></strong><span>○○○○店ご利用</span></a></li>
+						<li><a href="#"><%= image_tag 'top/voice_image_sample.png', :width => '216', :height => '162' %><strong>○.○様<span>[2016/02/01]</span></strong><span>○○○○店ご利用</span></a></li>
 					</ul>
 				</div>
 				<div class="top_title">
@@ -431,24 +411,25 @@
 				</div>
 				<div class="top_staff">
 					<ul>
-						<li><a href="#"><img src="top/images/staff_image_sample.png" width="161" height="121"><strong>山田 太郎</strong><span>やまだ たろう</span></a></li>
-						<li><a href="#"><img src="top/images/staff_image_sample.png" width="161" height="121"><strong>山田 太郎</strong><span>やまだ たろう</span></a></li>
-						<li><a href="#"><img src="top/images/staff_image_sample.png" width="161" height="121"><strong>山田 太郎</strong><span>やまだ たろう</span></a></li>
-						<li><a href="#"><img src="top/images/staff_image_sample.png" width="161" height="121"><strong>山田 太郎</strong><span>やまだ たろう</span></a></li>
+						<li><a href="#"><%= image_tag 'top/staff_image_sample.png', :width => '161', :height => '121' %>
+						<strong>山田 太郎</strong><span>やまだ たろう</span></a></li>
+						<li><a href="#"><%= image_tag 'top/staff_image_sample.png', :width => '161', :height => '121' %><strong>山田 太郎</strong><span>やまだ たろう</span></a></li>
+						<li><a href="#"><%= image_tag 'top/staff_image_sample.png', :width => '161', :height => '121' %><strong>山田 太郎</strong><span>やまだ たろう</span></a></li>
+						<li><a href="#"><%= image_tag 'top/staff_image_sample.png', :width => '161', :height => '121' %><strong>山田 太郎</strong><span>やまだ たろう</span></a></li>
 					</ul>
 				</div>
 			</article>
 			<article id="sidebar">
 				<div>
 					<ul>
-						<li><a href="#"><img src="top/images/side_bnr_sample_02.png" width="240" height="80"></a></li>
-						<li><a href="#"><img src="top/images/side_bnr_sample_02.png" width="240" height="80"></a></li>
-						<li><a href="#"><img src="top/images/side_bnr_sample_02.png" width="240" height="80"></a></li>
-						<li><a href="#"><img src="top/images/side_bnr_sample_02.png" width="240" height="80"></a></li>
-						<li><a href="#"><img src="top/images/side_bnr_sample_01.png" width="240" height="240"></a></li>
-						<li><a href="#"><img src="top/images/side_bnr_sample_01.png" width="240" height="240"></a></li>
-						<li><a href="#"><img src="top/images/side_bnr_sample_01.png" width="240" height="240"></a></li>
-						<li><a href="#"><img src="top/images/side_bnr_sample_01.png" width="240" height="240"></a></li>
+						<li><a href="#"><%= image_tag 'top/side_bnr_sample_02.png', :width => '240', :height => '80' %></a></li>
+						<li><a href="#"><%= image_tag 'top/side_bnr_sample_02.png', :width => '240', :height => '80' %></a></li>
+						<li><a href="#"><%= image_tag 'top/side_bnr_sample_02.png', :width => '240', :height => '80' %></a></li>
+						<li><a href="#"><%= image_tag 'top/side_bnr_sample_02.png', :width => '240', :height => '80' %></a></li>
+						<li><a href="#"><%= image_tag 'top/side_bnr_sample_01.png', :width => '240', :height => '240' %></a></li>
+						<li><a href="#"><%= image_tag 'top/side_bnr_sample_01.png', :width => '240', :height => '240' %></a></li>
+						<li><a href="#"><%= image_tag 'top/side_bnr_sample_01.png', :width => '240', :height => '240' %></a></li>
+						<li><a href="#"><%= image_tag 'top/side_bnr_sample_01.png', :width => '240', :height => '240' %></a></li>
 					</ul>
 				</div>
 			</article>
@@ -464,25 +445,6 @@
 				<span><a href="#title_area">ページ上部へ戻る</a></span>
 			</div>
 		</section>
-		<section id="banner_area">
-			<div>
-				<ul>
-					<li><a href="#"><img src="top/images/footer_bnr_sample.png" width="176" height="60"></a></li>
-					<li><a href="#"><img src="top/images/footer_bnr_sample.png" width="176" height="60"></a></li>
-					<li><a href="#"><img src="top/images/footer_bnr_sample.png" width="176" height="60"></a></li>
-					<li><a href="#"><img src="top/images/footer_bnr_sample.png" width="176" height="60"></a></li>
-					<li><a href="#"><img src="top/images/footer_bnr_sample.png" width="176" height="60"></a></li>
-				</ul>
-			</div>
-		</section>
-		<footer>
-			<div>
-				<dl>
-					<dt>〇〇〇〇〇不動産<dt>
-					<dd>東京都知事 (1) 第00000号<br>〒000-0000　<br class="pc_none">東京都〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇<br>TEL 03-0000-0000　　<br class="pc_none">FAX 03-0000-0000</dd>
-					<dd>Copyright &copy; ○○○○○不動産., All Rights Reserved.</dd>
-				</dl>
-			</div>
-		</footer>
+
 	</body>
 </html>

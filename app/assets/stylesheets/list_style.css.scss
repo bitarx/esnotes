@@ -1,0 +1,1631 @@
+@charset "UTF-8";
+
+/*----------------------------------------------------
+ contents style）SP
+----------------------------------------------------*/
+
+div.list_search {
+	width: 90%;
+	overflow: hidden;
+	margin: 0px auto 30px auto;
+	padding: 0px;
+}
+div.list_search h4 {
+	width: 100%;
+	font-size: 16px;
+	background-image: url(../images/search_ttl_icon.png);
+	background-size: 18px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	text-indent: 25px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+div.list_search ol {
+	width: 100%;
+	float: right;
+	overflow: hidden;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+div.list_search ol li {
+	float: right;
+	text-align: right;
+	overflow: hidden;
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+}
+div.list_search ol li:last-child {
+	margin-bottom: 0px;
+}
+div.list_search ol li a {
+	display: block;
+	text-indent: 20px;
+	background-image: url(../images/search_icon.png);
+	background-size: 14px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	text-decoration: underline;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_search ul {
+	width: 100%;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	box-sizing: border-box;
+	border: 2px solid #dfdfdf;
+	margin: 0px 0px 20px 0px;
+	padding: 15px;
+}
+div.list_search ul li {
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+	border-bottom: 1px dotted #999;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 0px;
+}
+div.list_search ul li:last-child {
+	border-bottom: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+div.list_search ul li dl {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_search ul li dl dt {
+	width: 25%;
+	text-align: center;
+	background-color: #333;
+	font-size: 12px;
+	line-height: 20px;
+	float: left;
+	color: #fff;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.list_search ul li dl dd {
+	width: 70%;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_search a.btn {
+	width: 240px;
+	background-color: #bc1309;
+	line-height: 40px;
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	margin: 20px auto 0px auto;
+	padding: 0px;
+}
+div.list_search a.btn.search {
+	background-color: #bc1309;
+}
+div.list_search a.btn.contact {
+	background-color: #333;
+}
+
+
+
+
+div.list_result {
+	width: 90%;
+	overflow: hidden;
+	margin: 0px auto 20px auto;
+	padding: 0px;
+}
+div.list_result p {
+	margin: 0px auto 15px auto;
+	padding: 0px;
+}
+div.list_result p strong {
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 16px;
+	color: #3975b2;
+	margin: 0px 5px 0px 5px;
+	padding: 0px;
+}
+div.list_result ul {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_result ul li {
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+}
+div.list_result ul li:before {
+	content: "■";
+	color: #3975b2;
+	margin: 0px 0px 0px 0px;
+}
+div.list_result ul li:last-child {
+	margin-bottom: 0px;
+}
+
+
+
+
+div.list_property {
+	width: 90%;
+	overflow: hidden;
+	border: 2px solid #dfdfdf;
+	box-sizing: border-box;
+	border-radius: 3px;
+	margin: 0px auto 30px auto;
+	padding: 15px;
+}
+div.list_property h4 {
+	background-color: #f5f5f5;
+	box-sizing: border-box;
+	margin: 0px 0px 20px 0px;
+	padding: 10px;
+}
+div.list_property img.img {
+	width: 100%;
+	height: auto;
+	margin: 0px auto 20px auto;
+}
+div.list_property ul {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+}
+div.list_property ul li {
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+	border-bottom: 1px dotted #999;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 0px;
+}
+div.list_property ul li:last-child {
+	border-bottom: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+div.list_property ul li dl {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property ul li dl dt {
+	width: 15%;
+	text-align: center;
+	background-color: #3975b2;
+	font-size: 12px;
+	line-height: 20px;
+	float: left;
+	color: #fff;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.list_property ul li dl dd {
+	width: 80%;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div {
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #dfdfdf;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div ol {
+	width: 100%;
+	overflow: hidden;
+	display: table;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div ol li {
+	width: 25%;
+	text-align: center;
+	display: table-cell;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	border-right: 1px solid #dfdfdf;
+	border-bottom: none;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
+}
+div.list_property div ol li:last-child {
+	border-right: none;
+}
+div.list_property div ul {
+	width: 100%;
+	overflow: hidden;
+	display: table;
+	border-top: 1px solid #dfdfdf;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div ul li {
+	width: 25%;
+	text-align: center;
+	display: table-cell;
+	overflow: hidden;
+	font-size: 12px;
+	border-bottom: none;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
+}
+div.list_property div ol li:nth-child(3),
+div.list_property div ol li:nth-child(4) ,
+div.list_property div ul li:nth-child(3),
+div.list_property div ul li:nth-child(4) {
+	display: none;
+}
+div.list_property div ul li a {
+	font-size: 12px;
+	color: #3975b2;
+	text-decoration: underline;
+}
+div.list_property div ul li strong {
+	font-size: 12px;
+	color: #bc1309;
+}
+
+
+
+div.list_paging {
+	width: 90%;
+	margin: 0px auto 30px auto;
+	padding: 0px;
+}
+div.list_paging ul {
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_paging ul li {
+	width: 30px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 30px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0px 3px 0px 3px;
+	padding: 0px;
+}
+div.list_paging ul li a {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+	line-height: 30px;
+	display: block;
+}
+div.list_paging ul li.prev,
+div.list_paging ul li.next {
+	background-color: inherit;
+}
+div.list_paging ul li.prev a,
+div.list_paging ul li.next a {
+	background-color: inherit;
+	font-weight: bold;
+}
+
+
+
+/*----------------------------------------------------
+ sidebar style）SP
+----------------------------------------------------*/
+
+div.side_search {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px auto 30px auto;
+	padding: 0px;
+}
+div.side_search ol {
+	width: 90%;
+	margin: 10px auto 0px auto;
+	padding: 0px;
+}
+div.side_search ol li {
+	width: 100%;
+	float: left;
+	text-align: left;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.side_search dl {
+	width: 90%;
+	overflow: hidden;
+	border-bottom: 2px solid #dfdfdf; 
+	margin: 0px auto 15px auto;
+	padding: 0px 0px 15px 0px;
+}
+div.side_search dl:first-of-type {
+	padding-top: 15px;
+}
+div.side_search dl dt {
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+	margin: 0px 0px 10px 0px;
+	padding: 3px 10px 3px 10px;
+}
+div.side_search dl dd {
+	width: 100%;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_search dl dd ul {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_search dl dd ul li {
+	width: 50%;
+	float: left;
+	text-align: left;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.side_search dl dd ul li:last-child {
+	margin-bottom: 0px;
+}
+div.side_search dl dd ul li.w100 {
+	width: 100%;
+}
+div.side_search button {
+	width: 200px;
+	background-color: #3975b2;
+	color: #fff;
+	background-image: url(../images/side_search_btn_icon.png);
+	background-size: 18px;
+	text-indent: 10px;
+	background-position: 50px center;
+	background-repeat: no-repeat;
+	border: 0;
+	font-weight: bold;
+	margin: 0px auto 20px auto;
+	padding: 5px 0px 5px 0px;
+}
+
+
+
+
+
+div.side_new {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+}
+div.side_new ul {
+	width: 90%;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+}
+div.side_new ul li {
+	width: 48%;
+	text-align: center;
+	overflow: hidden;
+	float: left;
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+}
+div.side_new ul li:nth-child(2n) {
+	float: right;
+}
+div.side_new ul li a dl {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dt {
+	width: 100%;
+	height: auto;
+	color: #FFF;
+	line-height: 2em;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul li {
+	width: 45%;
+	font-weight: bold;
+	font-size: 16px;
+	color: #bc1309;
+	text-align: right;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul li:nth-child(2) {
+	color: #000000;
+	text-align: left;
+	margin: 0px 0px 5px 5px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul li span {
+	font-size: 12px;
+	color: #bc1309;
+}
+div.side_new ul li a dl dd ol {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ol li {
+	width: 100%;
+	font-size: 11px;
+	line-height: 2em;
+	text-indent: 25px;
+	border-bottom: 1px dotted #333333;
+	background-image: url(../../commons/images/bukken_mansion_icon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: #333333;
+	overflow: hidden;
+	text-align: left;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ol li:last-child {
+	background-image: url(../../commons/images/bukken_toho_icon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+div.side_new ul li a dl dd img {
+	width: 100%; 
+	height: auto;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd span.btn {
+	display: none;
+}
+
+
+
+
+@media only screen and (min-width: 460px) {
+	
+}
+
+@media only screen and (min-width: 700px) {
+
+/*----------------------------------------------------
+ contents style）TB
+----------------------------------------------------*/
+
+div.list_search {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	margin: 0px auto 30px auto;
+	padding: 0px;
+}
+div.list_search h4 {
+	width: 100%;
+	font-size: 16px;
+	text-align: left;
+	background-image: url(../images/search_ttl_icon.png);
+	background-size: 18px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	text-indent: 25px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+div.list_search ol {
+	width: 100%;
+	float: right;
+	overflow: hidden;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+div.list_search ol li {
+	float: right;
+	text-align: right;
+	overflow: hidden;
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+}
+div.list_search ol li:last-child {
+	margin-bottom: 0px;
+}
+div.list_search ol li a {
+	display: block;
+	text-indent: 20px;
+	background-image: url(../images/search_icon.png);
+	background-size: 14px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	text-decoration: underline;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_search ul {
+	width: 100%;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	box-sizing: border-box;
+	border: 2px solid #dfdfdf;
+	margin: 0px 0px 20px 0px;
+	padding: 15px;
+}
+div.list_search ul li {
+	width: 48%;
+	float: left;
+	text-align: left;
+	overflow: hidden;
+	border-bottom: 1px dotted #999;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 0px;
+}
+div.list_search ul li:nth-child(2n) {
+	float: right;
+}
+div.list_search ul li:last-child {
+	width: 100%;
+	border-bottom: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+div.list_search ul li dl {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_search ul li dl dt {
+	width: 25%;
+	text-align: center;
+	background-color: #333;
+	font-size: 12px;
+	line-height: 20px;
+	float: left;
+	color: #fff;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.list_search ul li:last-child dl dt {
+	width: 12%;
+}
+
+div.list_search ul li dl dd {
+	width: 70%;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_search ul li:last-child dl dd {
+	width: 85.5%;
+}
+
+div.list_search a.btn {
+	width: 240px;
+	background-color: #bc1309;
+	line-height: 40px;
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	margin: 0px 10px 0px 10px;
+	padding: 0px;
+}
+div.list_search a.btn.search {
+	background-color: #bc1309;
+}
+div.list_search a.btn.contact {
+	background-color: #333;
+}
+
+
+
+
+div.list_result {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px auto 20px auto;
+	padding: 0px;
+}
+div.list_result p {
+	float: left;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+}
+div.list_result p strong {
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 16px;
+	color: #3975b2;
+	margin: 0px 5px 0px 5px;
+	padding: 0px;
+}
+div.list_result ul {
+	width: auto;
+	float: right;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_result ul li {
+	width: auto;
+	display: inline-block;
+	text-align: left;
+	overflow: hidden;
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+}
+div.list_result ul li:before {
+	content: "■";
+	color: #3975b2;
+	margin: 0px 0px 0px 0px;
+}
+div.list_result ul li:last-child {
+	margin-bottom: 0px;
+}
+
+
+
+
+div.list_property {
+	width: 100%;
+	overflow: hidden;
+	border: 2px solid #dfdfdf;
+	box-sizing: border-box;
+	border-radius: 3px;
+	margin: 0px auto 30px auto;
+	padding: 15px;
+}
+div.list_property h4 {
+	background-color: #f5f5f5;
+	box-sizing: border-box;
+	margin: 0px 0px 20px 0px;
+	padding: 10px;
+}
+div.list_property img.img {
+	width: 40%;
+	height: auto;
+	float: left;
+	margin: 0px auto 20px auto;
+}
+div.list_property ul {
+	width: 57%;
+	float: right;
+	overflow: hidden;
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+}
+div.list_property ul li {
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+	border-bottom: 1px dotted #999;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 0px;
+}
+div.list_property ul li:last-child {
+	border-bottom: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+div.list_property ul li dl {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property ul li dl dt {
+	width: 15%;
+	text-align: center;
+	background-color: #3975b2;
+	font-size: 12px;
+	line-height: 20px;
+	float: left;
+	color: #fff;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.list_property ul li dl dd {
+	width: 82%;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div {
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #dfdfdf;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div ol {
+	width: 100%;
+	overflow: hidden;
+	display: table;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div ol li {
+	width: 16%;
+	text-align: center;
+	display: table-cell;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	border-right: 1px solid #dfdfdf;
+	border-bottom: none;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
+}
+div.list_property div ol li:last-child {
+	border-right: none;
+}
+div.list_property div ul {
+	width: 100%;
+	overflow: hidden;
+	display: table;
+	border-top: 1px solid #dfdfdf;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div ul li {
+	width: 16%;
+	text-align: center;
+	display: table-cell;
+	overflow: hidden;
+	font-size: 12px;
+	border-bottom: none;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
+}
+div.list_property div ol li:nth-child(3),
+div.list_property div ol li:nth-child(4) ,
+div.list_property div ul li:nth-child(3),
+div.list_property div ul li:nth-child(4) {
+	display: table-cell;
+}
+div.list_property div ul li a {
+	font-size: 12px;
+	color: #3975b2;
+	text-decoration: underline;
+}
+div.list_property div ul li strong {
+	font-size: 12px;
+	color: #bc1309;
+}
+
+
+
+div.list_paging {
+	width: 90%;
+	margin: 0px auto 30px auto;
+	padding: 0px;
+}
+div.list_paging ul {
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_paging ul li {
+	width: 30px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 30px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0px 3px 0px 3px;
+	padding: 0px;
+}
+div.list_paging ul li a {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+	line-height: 30px;
+	text-decoration: none;
+	display: block;
+}
+div.list_paging ul li.prev,
+div.list_paging ul li.next {
+	background-color: inherit;
+}
+div.list_paging ul li.prev a,
+div.list_paging ul li.next a {
+	background-color: inherit;
+	font-weight: bold;
+}
+
+
+
+/*----------------------------------------------------
+ sidebar style）TB
+----------------------------------------------------*/
+
+div.side_search {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px auto 30px auto;
+	padding: 0px;
+}
+div.side_search ol {
+	width: 95%;
+	margin: 10px auto 0px auto;
+	padding: 0px;
+}
+div.side_search ol li {
+	width: 25%;
+	float: left;
+	text-align: left;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.side_search dl {
+	width: 95%;
+	overflow: hidden;
+	border-bottom: 2px solid #dfdfdf; 
+	margin: 0px auto 15px auto;
+	padding: 0px 0px 15px 0px;
+}
+div.side_search dl:first-of-type {
+	padding-top: 15px;
+}
+div.side_search dl dt {
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+	margin: 0px 0px 10px 0px;
+	padding: 3px 10px 3px 10px;
+}
+div.side_search dl dd {
+	width: 100%;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_search dl dd ul {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_search dl dd ul li {
+	width: 25%;
+	float: left;
+	text-align: left;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.side_search dl dd ul li:last-child {
+	margin-bottom: 0px;
+}
+div.side_search dl dd ul li.w100 {
+	width: 50%;
+}
+div.side_search button {
+	width: 200px;
+	background-color: #3975b2;
+	color: #fff;
+	background-image: url(../images/side_search_btn_icon.png);
+	background-size: 18px;
+	text-indent: 10px;
+	background-position: 50px center;
+	background-repeat: no-repeat;
+	border: 0;
+	font-weight: bold;
+	margin: 0px auto 20px auto;
+	padding: 5px 0px 5px 0px;
+}
+
+
+
+
+
+
+div.side_new {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0px auto 20px auto;
+	padding: 0px;
+}
+div.side_new ul {
+	width: 95%;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+}
+div.side_new ul li {
+	width: 30%;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	float: left;
+	margin: 0px 5% 30px 0px;
+	padding: 0px;
+}
+div.side_new ul li:nth-child(2n) {
+	float: left;
+}
+div.side_new ul li:nth-child(3n) {
+	margin-right: 0px;
+}
+div.side_new ul li a {
+	display: block;
+	text-decoration: none;
+}
+div.side_new ul li a dl {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dt {
+	width: 100%;
+	height: auto;
+	color: #FFF;
+	line-height: 30px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul li {
+	width: 50%;
+	font-weight: bold;
+	font-size: 20px;
+	color: #bc1309;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul li:nth-child(2) {
+	color: #333;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul li span {
+	font-size: 14px;
+	color: #bc1309;
+}
+div.side_new ul li a dl dd ol {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ol li {
+	width: 100%;
+	font-size: 14px;
+	text-indent: 25px;
+	line-height: 40px;
+	border-bottom: 1px dotted #333333;
+	background-image: url(../../commons/images/bukken_mansion_icon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: #333333;
+	overflow: hidden;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ol li:last-child {
+	background-image: url(../../commons/images/bukken_toho_icon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+div.side_new ul li a dl dd img {
+	width: 100%; 
+	height: auto;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd span.btn {
+	display: none;
+}
+div.side_new ul li a dl dd span.btn:before {
+	content: "» ";
+}
+
+
+
+
+}
+
+@media only screen and (min-width: 1101px) {
+
+/*----------------------------------------------------
+ contents style）PC
+----------------------------------------------------*/
+
+div.list_search {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	margin: 0px auto 30px auto;
+	padding: 0px;
+}
+div.list_search h4 {
+	width: 100%;
+	font-size: 16px;
+	text-align: left;
+	background-image: url(../images/search_ttl_icon.png);
+	background-size: 18px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	text-indent: 25px;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_search ol {
+	width: 100%;
+	float: right;
+	overflow: hidden;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+div.list_search ol li {
+	float: right;
+	text-align: right;
+	overflow: hidden;
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+}
+div.list_search ol li:last-child {
+	margin-bottom: 0px;
+}
+div.list_search ol li a {
+	display: block;
+	text-indent: 20px;
+	background-image: url(../images/search_icon.png);
+	background-size: 14px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	text-decoration: underline;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_search ul {
+	width: 100%;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	box-sizing: border-box;
+	border: 2px solid #dfdfdf;
+	margin: 0px 0px 20px 0px;
+	padding: 20px;
+}
+div.list_search ul li {
+	width: 48%;
+	float: left;
+	text-align: left;
+	overflow: hidden;
+	border-bottom: 1px dotted #999;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 0px;
+}
+div.list_search ul li:nth-child(2n) {
+	float: right;
+}
+div.list_search ul li:last-child {
+	width: 100%;
+	border-bottom: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+div.list_search ul li dl {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_search ul li dl dt {
+	width: 25%;
+	text-align: center;
+	background-color: #333;
+	font-size: 12px;
+	line-height: 20px;
+	float: left;
+	color: #fff;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.list_search ul li:last-child dl dt {
+	width: 12%;
+}
+
+div.list_search ul li dl dd {
+	width: 70%;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_search ul li:last-child dl dd {
+	width: 85.5%;
+}
+
+div.list_search a.btn {
+	width: 240px;
+	background-color: #bc1309;
+	line-height: 40px;
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	margin: 0px 10px 0px 10px;
+	padding: 0px;
+}
+div.list_search a.btn.search {
+	display: none;
+}
+div.list_search a.btn.contact {
+	background-color: #333;
+}
+
+
+
+
+div.list_result {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px auto 20px auto;
+	padding: 0px;
+}
+div.list_result p {
+	float: left;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+}
+div.list_result p strong {
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 16px;
+	color: #3975b2;
+	margin: 0px 5px 0px 5px;
+	padding: 0px;
+}
+div.list_result ul {
+	width: auto;
+	float: right;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_result ul li {
+	width: auto;
+	display: inline-block;
+	text-align: left;
+	overflow: hidden;
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+}
+div.list_result ul li:before {
+	content: "■";
+	color: #3975b2;
+	margin: 0px 0px 0px 0px;
+}
+div.list_result ul li:last-child {
+	margin-bottom: 0px;
+}
+
+
+
+
+div.list_property {
+	width: 100%;
+	overflow: hidden;
+	border: 2px solid #dfdfdf;
+	box-sizing: border-box;
+	border-radius: 3px;
+	margin: 0px auto 30px auto;
+	padding: 20px;
+}
+div.list_property h4 {
+	background-color: #f5f5f5;
+	box-sizing: border-box;
+	margin: 0px 0px 20px 0px;
+	padding: 10px;
+}
+div.list_property img.img {
+	width: 40%;
+	height: auto;
+	float: left;
+	margin: 0px auto 20px auto;
+}
+div.list_property ul {
+	width: 57%;
+	float: right;
+	overflow: hidden;
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+}
+div.list_property ul li {
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+	border-bottom: 1px dotted #999;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 0px;
+}
+div.list_property ul li:last-child {
+	border-bottom: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+div.list_property ul li dl {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property ul li dl dt {
+	width: 15%;
+	text-align: center;
+	background-color: #3975b2;
+	font-size: 12px;
+	line-height: 20px;
+	float: left;
+	color: #fff;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.list_property ul li dl dd {
+	width: 82%;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div {
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #dfdfdf;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div ol {
+	width: 100%;
+	overflow: hidden;
+	display: table;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div ol li {
+	width: 16%;
+	text-align: center;
+	display: table-cell;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	border-right: 1px solid #dfdfdf;
+	border-bottom: none;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
+}
+div.list_property div ol li:last-child {
+	border-right: none;
+}
+div.list_property div ul {
+	width: 100%;
+	overflow: hidden;
+	display: table;
+	border-top: 1px solid #dfdfdf;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_property div ul li {
+	width: 16%;
+	text-align: center;
+	display: table-cell;
+	overflow: hidden;
+	font-size: 14px;
+	border-bottom: none;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
+}
+div.list_property div ol li:nth-child(3),
+div.list_property div ol li:nth-child(4) ,
+div.list_property div ul li:nth-child(3),
+div.list_property div ul li:nth-child(4) {
+	display: table-cell;
+}
+div.list_property div ul li a {
+	font-size: 14px;
+	color: #3975b2;
+	text-decoration: underline;
+}
+div.list_property div ul li strong {
+	font-size: 14px;
+	color: #bc1309;
+}
+
+
+
+div.list_paging {
+	width: 90%;
+	margin: 0px auto 30px auto;
+	padding: 0px;
+}
+div.list_paging ul {
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+div.list_paging ul li {
+	width: 30px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 30px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0px 3px 0px 3px;
+	padding: 0px;
+}
+div.list_paging ul li a {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+	line-height: 30px;
+	text-decoration: none;
+	display: block;
+}
+div.list_paging ul li.prev,
+div.list_paging ul li.next {
+	background-color: inherit;
+}
+div.list_paging ul li.prev a,
+div.list_paging ul li.next a {
+	background-color: inherit;
+	font-weight: bold;
+}
+
+
+
+/*----------------------------------------------------
+ sidebar style）PC
+----------------------------------------------------*/
+
+div.side_search {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px auto 30px auto;
+	padding: 0px;
+}
+div.side_search ol {
+	width: 100%;
+	margin: 10px auto 0px auto;
+	padding: 0px;
+}
+div.side_search ol li {
+	width: 100%;
+	float: left;
+	text-align: left;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.side_search ol li label {
+	font-size: 12px;
+}
+div.side_search dl {
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 2px solid #dfdfdf; 
+	margin: 0px auto 15px auto;
+	padding: 0px 0px 15px 0px;
+}
+div.side_search dl:first-of-type {
+	padding-top: 15px;
+}
+div.side_search dl dt {
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+	margin: 0px 0px 10px 0px;
+	padding: 3px 10px 3px 10px;
+}
+div.side_search dl dd {
+	width: 100%;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_search dl dd ul {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_search dl dd ul li {
+	width: 50%;
+	float: left;
+	text-align: left;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.side_search dl dd ul li:last-child {
+	margin-bottom: 0px;
+}
+div.side_search dl dd ul li.w100 {
+	width: 100%;
+}
+div.side_search dl dd ul li label {
+	font-size: 12px;
+}
+div.side_search dl dd select {
+	font-size: 12px;
+}
+div.side_search button {
+	width: 200px;
+	background-color: #3975b2;
+	color: #fff;
+	background-image: url(../images/side_search_btn_icon.png);
+	background-size: 18px;
+	text-indent: 10px;
+	background-position: 50px center;
+	background-repeat: no-repeat;
+	border: 0;
+	font-weight: bold;
+	margin: 0px auto 20px auto;
+	padding: 5px 0px 5px 0px;
+}
+
+
+
+
+
+
+div.side_new {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0px auto 20px auto;
+	padding: 0px;
+}
+div.side_new ul {
+	width: 100%;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+}
+div.side_new ul li {
+	width: 100%;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	float: left;
+	margin: 0px 0 30px 0px;
+	padding: 0px;
+}
+div.side_new ul li:nth-child(2n) {
+	float: left;
+}
+div.side_new ul li:nth-child(3n) {
+	margin-right: 0px;
+}
+div.side_new ul li a {
+	display: block;
+	text-decoration: none;
+}
+div.side_new ul li a dl {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dt {
+	width: 100%;
+	height: auto;
+	color: #FFF;
+	line-height: 30px;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul li {
+	width: 50%;
+	font-weight: bold;
+	font-size: 20px;
+	color: #bc1309;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul li:nth-child(2) {
+	color: #333;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ul li span {
+	font-size: 14px;
+	color: #bc1309;
+}
+div.side_new ul li a dl dd ol {
+	width: 100%;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ol li {
+	width: 100%;
+	font-size: 14px;
+	text-indent: 25px;
+	line-height: 40px;
+	border-bottom: 1px dotted #333333;
+	background-image: url(../../commons/images/bukken_mansion_icon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: #333333;
+	overflow: hidden;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd ol li:last-child {
+	background-image: url(../../commons/images/bukken_toho_icon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+div.side_new ul li a dl dd img {
+	width: 100%; 
+	height: auto;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+div.side_new ul li a dl dd span.btn {
+	display: none;
+}
+div.side_new ul li a dl dd span.btn:before {
+	content: "» ";
+}
+
+
+}

@@ -1,0 +1,1271 @@
+		<section id="title_area">
+			<div>
+				<h1>〇〇〇〇〇〇〇〇は東京都〇〇区の賃貸・売買物件をご紹介しております！</h1>
+				<span class="menu_btn">MENU</span>
+				<ol>
+					<li class="bukken"><a href="#">最近見た物件</a></li>
+					<li class="list"><a href="#">検討リスト</a></li>
+				</ol>
+				<ul class="menu">
+					<li><a href="#">ホーム</a></li>
+					<li><a href="#">物件検索</a></li>
+					<li><a href="#">店舗案内</a></li>
+					<li><a href="#">お客様の声</a></li>
+					<li><a href="#">スタッフ紹介</a></li>
+					<li><a href="#">お問い合わせ</a></li>
+					<li><a href="#">求人情報</a></li>
+					<li><a href="#">プライバシーポリシー</a></li>
+					<li><a href="#">利用規約</a></li>
+					<li><a href="#">サイトマップ</a></li>
+				</ul>
+			</div>
+		</section>
+		<header>
+			<div>
+				<h2><a href="#">〇〇〇〇〇不動産</a></h2>
+				<dl>
+					<dt><span>○○店</span>03-0000-0000</dt>
+					<dd>
+						<p>総合窓口 本部　<strong>0120-000-000</strong></p></dd>
+					<dd>営業時間 00:00～00:00 │ 定休日 ○曜</dd>
+				</dl>
+			</div>
+		</header>
+		<nav>
+			<div>
+				 <ul>
+					<li><a href="#">ホーム</a></li>
+					<li><a href="#">物件検索</a></li>
+					<li><a href="#">店舗案内</a></li>
+					<li><a href="#">お客様の声</a></li>
+					<li><a href="#">スタッフ紹介</a></li>
+					<li><a href="#">お問い合わせ</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section id="pankuzu_area">
+			<div>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li>物件一覧</li>
+				</ul>
+			</div>
+		</section>
+		<section id="contents_area">
+			<article>
+				<div class="title">
+					<div>
+						<h3>○○○○○○○物件一覧</h3>
+						<ul>
+							<li><%= image_tag 'commons/title_icon_google.png', :width => '32', :height => '20' %>
+							</li>
+							<li><%= image_tag 'commons/title_icon_twitter.png', :width => '67', :height => '20' %>
+							</li>
+							<li><%= image_tag 'commons/title_icon_fb.png', :width => '82', :height => '20' %>
+							</li>
+							<li><%= image_tag 'commons/title_icon_hatena.png', :width => '20', :height => '20' %></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list_search">
+					<h4>選択中の検索条件</h4>
+					<ol>
+						<li><a href="#">地域を変更</a></li>
+						<li><a href="#">沿線を変更</a></li>
+					</ol>
+					<ul>
+						<li>
+							<dl>
+								<dt>沿線</dt>
+								<dd>赤羽駅</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>賃料</dt>
+								<dd>下限なし～10万円以下</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>面積</dt>
+								<dd>20㎡以上～上限なし</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>築年数</dt>
+								<dd>指定しない</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>駅</dt>
+								<dd>徒歩指定しない</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>間取</dt>
+								<dd>指定なし</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>設備条件</dt>
+								<dd>指定なし</dd>
+							</dl>
+						</li>
+					</ul>
+					<a href="#" class="btn contact">選択中の条件で問い合わせる</a>
+					<a href="#a_side_search" class="btn search">さらに条件を絞り込む</a>
+				</div>
+				<div class="list_result">
+					<p>該当公開件数 <strong>47</strong> 棟<p>
+					<ul>
+						<li>
+							並び順
+							<select name="">
+								<option value="新着順">新着順</option>
+								<option value="安い順">安い順</option>
+								<option value="高い順">高い順</option>
+								<option value="おすすめ順">おすすめ順</option>
+								<option value="住所ごと順">住所ごと順</option>
+								<option value="面積の広い順">面積の広い順</option>
+								<option value="築年数が新しい順">築年数が新しい順</option>
+							</select>
+						</li>
+						<li>
+							表示件数
+							<select name="">
+								<option value="10件">10件</option>
+								<option value="30件">30件</option>
+								<option value="50件">50件</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<% @rentals.each do |rental| %>
+					<div class="list_property">
+						<h4><%= rental.name %></h4>
+						<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+						<ul>
+							<li>
+								<dl>
+									<dt>住所</dt>
+									<dd>東京都北区赤羽西４丁目</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>交通</dt>
+									<dd>
+										京浜東北線「赤羽」駅 徒歩7分<br>
+										南北線「赤羽岩淵」駅 徒歩15分<br>
+										京浜東北線「東十条」駅 徒歩17分
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>築年</dt>
+									<dd>築41年</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>階数</dt>
+									<dd>2階建</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>構造</dt>
+									<dd>軽量鉄骨</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>向き</dt>
+									<dd>南</dd>
+								</dl>
+							</li>
+						</ul>
+						<div>
+							<ol>
+								<li>賃料</li>
+								<li>間取り</li>
+								<li>専有面積</li>
+								<li>所在階</li>
+								<li>詳細</li>
+								<li>検討リスト</li>
+							</ol>
+							<ul>
+								<li><strong>3.7万円</strong></li>
+								<li>1R</li>
+								<li>15.18㎡</li>
+								<li>5階</li>
+								<li><a href="#">詳細を見る</a></li>
+								<li><a href="#">追加する</a></li>
+							</ul>
+							<ul>
+								<li><strong>3.7万円</strong></li>
+								<li>1R</li>
+								<li>15.18㎡</li>
+								<li>5階</li>
+								<li><a href="#">詳細を見る</a></li>
+								<li><a href="#">追加する</a></li>
+							</ul>
+						</div>
+					</div>
+				<% end %>
+				<div class="list_property">
+					<h4>鈴木コーポ</h4>
+					<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+					<ul>
+						<li>
+							<dl>
+								<dt>住所</dt>
+								<dd>東京都北区赤羽西４丁目</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>交通</dt>
+								<dd>
+									京浜東北線「赤羽」駅 徒歩7分<br>
+									南北線「赤羽岩淵」駅 徒歩15分<br>
+									京浜東北線「東十条」駅 徒歩17分
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>築年</dt>
+								<dd>築41年</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>階数</dt>
+								<dd>2階建</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>構造</dt>
+								<dd>軽量鉄骨</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>向き</dt>
+								<dd>南</dd>
+							</dl>
+						</li>
+					</ul>
+					<div>
+						<ol>
+							<li>賃料</li>
+							<li>間取り</li>
+							<li>専有面積</li>
+							<li>所在階</li>
+							<li>詳細</li>
+							<li>検討リスト</li>
+						</ol>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list_property">
+					<h4>鈴木コーポ</h4>
+					<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+					<ul>
+						<li>
+							<dl>
+								<dt>住所</dt>
+								<dd>東京都北区赤羽西４丁目</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>交通</dt>
+								<dd>
+									京浜東北線「赤羽」駅 徒歩7分<br>
+									南北線「赤羽岩淵」駅 徒歩15分<br>
+									京浜東北線「東十条」駅 徒歩17分
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>築年</dt>
+								<dd>築41年</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>階数</dt>
+								<dd>2階建</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>構造</dt>
+								<dd>軽量鉄骨</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>向き</dt>
+								<dd>南</dd>
+							</dl>
+						</li>
+					</ul>
+					<div>
+						<ol>
+							<li>賃料</li>
+							<li>間取り</li>
+							<li>専有面積</li>
+							<li>所在階</li>
+							<li>詳細</li>
+							<li>検討リスト</li>
+						</ol>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list_property">
+					<h4>鈴木コーポ</h4>
+					<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+					<ul>
+						<li>
+							<dl>
+								<dt>住所</dt>
+								<dd>東京都北区赤羽西４丁目</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>交通</dt>
+								<dd>
+									京浜東北線「赤羽」駅 徒歩7分<br>
+									南北線「赤羽岩淵」駅 徒歩15分<br>
+									京浜東北線「東十条」駅 徒歩17分
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>築年</dt>
+								<dd>築41年</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>階数</dt>
+								<dd>2階建</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>構造</dt>
+								<dd>軽量鉄骨</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>向き</dt>
+								<dd>南</dd>
+							</dl>
+						</li>
+					</ul>
+					<div>
+						<ol>
+							<li>賃料</li>
+							<li>間取り</li>
+							<li>専有面積</li>
+							<li>所在階</li>
+							<li>詳細</li>
+							<li>検討リスト</li>
+						</ol>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list_property">
+					<h4>鈴木コーポ</h4>
+					<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+					<ul>
+						<li>
+							<dl>
+								<dt>住所</dt>
+								<dd>東京都北区赤羽西４丁目</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>交通</dt>
+								<dd>
+									京浜東北線「赤羽」駅 徒歩7分<br>
+									南北線「赤羽岩淵」駅 徒歩15分<br>
+									京浜東北線「東十条」駅 徒歩17分
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>築年</dt>
+								<dd>築41年</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>階数</dt>
+								<dd>2階建</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>構造</dt>
+								<dd>軽量鉄骨</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>向き</dt>
+								<dd>南</dd>
+							</dl>
+						</li>
+					</ul>
+					<div>
+						<ol>
+							<li>賃料</li>
+							<li>間取り</li>
+							<li>専有面積</li>
+							<li>所在階</li>
+							<li>詳細</li>
+							<li>検討リスト</li>
+						</ol>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list_property">
+					<h4>鈴木コーポ</h4>
+					<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+					<ul>
+						<li>
+							<dl>
+								<dt>住所</dt>
+								<dd>東京都北区赤羽西４丁目</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>交通</dt>
+								<dd>
+									京浜東北線「赤羽」駅 徒歩7分<br>
+									南北線「赤羽岩淵」駅 徒歩15分<br>
+									京浜東北線「東十条」駅 徒歩17分
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>築年</dt>
+								<dd>築41年</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>階数</dt>
+								<dd>2階建</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>構造</dt>
+								<dd>軽量鉄骨</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>向き</dt>
+								<dd>南</dd>
+							</dl>
+						</li>
+					</ul>
+					<div>
+						<ol>
+							<li>賃料</li>
+							<li>間取り</li>
+							<li>専有面積</li>
+							<li>所在階</li>
+							<li>詳細</li>
+							<li>検討リスト</li>
+						</ol>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list_property">
+					<h4>鈴木コーポ</h4>
+					<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+					<ul>
+						<li>
+							<dl>
+								<dt>住所</dt>
+								<dd>東京都北区赤羽西４丁目</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>交通</dt>
+								<dd>
+									京浜東北線「赤羽」駅 徒歩7分<br>
+									南北線「赤羽岩淵」駅 徒歩15分<br>
+									京浜東北線「東十条」駅 徒歩17分
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>築年</dt>
+								<dd>築41年</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>階数</dt>
+								<dd>2階建</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>構造</dt>
+								<dd>軽量鉄骨</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>向き</dt>
+								<dd>南</dd>
+							</dl>
+						</li>
+					</ul>
+					<div>
+						<ol>
+							<li>賃料</li>
+							<li>間取り</li>
+							<li>専有面積</li>
+							<li>所在階</li>
+							<li>詳細</li>
+							<li>検討リスト</li>
+						</ol>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list_property">
+					<h4>鈴木コーポ</h4>
+					<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+					<ul>
+						<li>
+							<dl>
+								<dt>住所</dt>
+								<dd>東京都北区赤羽西４丁目</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>交通</dt>
+								<dd>
+									京浜東北線「赤羽」駅 徒歩7分<br>
+									南北線「赤羽岩淵」駅 徒歩15分<br>
+									京浜東北線「東十条」駅 徒歩17分
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>築年</dt>
+								<dd>築41年</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>階数</dt>
+								<dd>2階建</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>構造</dt>
+								<dd>軽量鉄骨</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>向き</dt>
+								<dd>南</dd>
+							</dl>
+						</li>
+					</ul>
+					<div>
+						<ol>
+							<li>賃料</li>
+							<li>間取り</li>
+							<li>専有面積</li>
+							<li>所在階</li>
+							<li>詳細</li>
+							<li>検討リスト</li>
+						</ol>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list_property">
+					<h4>鈴木コーポ</h4>
+					<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+					<ul>
+						<li>
+							<dl>
+								<dt>住所</dt>
+								<dd>東京都北区赤羽西４丁目</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>交通</dt>
+								<dd>
+									京浜東北線「赤羽」駅 徒歩7分<br>
+									南北線「赤羽岩淵」駅 徒歩15分<br>
+									京浜東北線「東十条」駅 徒歩17分
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>築年</dt>
+								<dd>築41年</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>階数</dt>
+								<dd>2階建</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>構造</dt>
+								<dd>軽量鉄骨</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>向き</dt>
+								<dd>南</dd>
+							</dl>
+						</li>
+					</ul>
+					<div>
+						<ol>
+							<li>賃料</li>
+							<li>間取り</li>
+							<li>専有面積</li>
+							<li>所在階</li>
+							<li>詳細</li>
+							<li>検討リスト</li>
+						</ol>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+						<ul>
+							<li><strong>3.7万円</strong></li>
+							<li>1R</li>
+							<li>15.18㎡</li>
+							<li>5階</li>
+							<li><a href="#">詳細を見る</a></li>
+							<li><a href="#">追加する</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list_paging">
+					<ul>
+						<li class="prev"><a href="#">＜</a></li>
+						<li>1</li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li class="next"><a href="#">＞</a></li>
+					</ul>
+				</div>
+			</article>
+			<article id="sidebar">
+				<div class="side_search" id="a_side_search">
+					<h4>検索条件の絞り込み</h4>
+					<form>
+						<ol>
+							<li><label><input type="checkbox" name="" value="アパート">アパート</label></li>
+							<li><label><input type="checkbox" name="" value="マンション">マンション</label></li>
+							<li><label><input type="checkbox" name="" value="一戸建て">一戸建て</label></li>
+						</ol>
+						<dl>
+							<dt>賃料</dt>
+							<dd>
+								<select name="">
+									<option value="下限なし">下限なし</option>
+									<option value="3万円以上">3万円以上</option>
+									<option value="3.5万円以上">3.5万円以上</option>
+									<option value="4万円以上">4万円以上</option>
+									<option value="4.5万円以上">4.5万円以上</option>
+									<option value="5万円以上">5万円以上</option>
+									<option value="5.5万円以上">5.5万円以上</option>
+									<option value="6万円以上">6万円以上</option>
+									<option value="6.5万円以上">6.5万円以上</option>
+									<option value="7万円以上">7万円以上</option>
+									<option value="7.5万円以上">7.5万円以上</option>
+									<option value="8万円以上">8万円以上</option>
+									<option value="8.5万円以上">8.5万円以上</option>
+									<option value="9万円以上">9万円以上</option>
+									<option value="9.5万円以上">9.5万円以上</option>
+									<option value="10万円以上">10万円以上</option>
+									<option value="10.5万円以上">10.5万円以上</option>
+									<option value="11万円以上">11万円以上</option>
+									<option value="11.5万円以上">11.5万円以上</option>
+									<option value="12万円以上">12万円以上</option>
+									<option value="12.5万円以上">12.5万円以上</option>
+									<option value="13万円以上">13万円以上</option>
+									<option value="13.5万円以上">13.5万円以上</option>
+									<option value="14万円以上">14万円以上</option>
+									<option value="14.5万円以上">14.5万円以上</option>
+									<option value="15万円以上">15万円以上</option>
+									<option value="15.5万円以上">15.5万円以上</option>
+									<option value="16万円以上">16万円以上</option>
+									<option value="16.5万円以上">16.5万円以上</option>
+									<option value="17万円以上">17万円以上</option>
+									<option value="17.5万円以上">17.5万円以上</option>
+									<option value="18万円以上">18万円以上</option>
+									<option value="18.5万円以上">18.5万円以上</option>
+									<option value="19万円以上">19万円以上</option>
+									<option value="19.5万円以上">19.5万円以上</option>
+									<option value="20万円以上">20万円以上</option>
+									<option value="25万円以上">25万円以上</option>
+									<option value="30万円以上">30万円以上</option>
+									<option value="40万円以上">40万円以上</option>
+									<option value="50万円以上">50万円以上</option>
+									<option value="100万円以上">100万円以上</option>
+									<option value="下限なし">下限なし</option>
+								</select> ～
+								<select name="">
+									<option value="上限なし">上限なし</option>
+									<option value="3万円以下">3万円以下</option>
+									<option value="3.5万円以下">3.5万円以下</option>
+									<option value="4万円以下">4万円以下</option>
+									<option value="4.5万円以下">4.5万円以下</option>
+									<option value="5万円以下">5万円以下</option>
+									<option value="5.5万円以下">5.5万円以下</option>
+									<option value="6万円以下">6万円以下</option>
+									<option value="6.5万円以下">6.5万円以下</option>
+									<option value="7万円以下">7万円以下</option>
+									<option value="7.5万円以下">7.5万円以下</option>
+									<option value="8万円以下">8万円以下</option>
+									<option value="8.5万円以下">8.5万円以下</option>
+									<option value="9万円以下">9万円以下</option>
+									<option value="9.5万円以下">9.5万円以下</option>
+									<option value="10万円以下">10万円以下</option>
+									<option value="10.5万円以下">10.5万円以下</option>
+									<option value="11万円以下">11万円以下</option>
+									<option value="11.5万円以下">11.5万円以下</option>
+									<option value="12万円以下">12万円以下</option>
+									<option value="12.5万円以下">12.5万円以下</option>
+									<option value="13万円以下">13万円以下</option>
+									<option value="13.5万円以下">13.5万円以下</option>
+									<option value="14万円以下">14万円以下</option>
+									<option value="14.5万円以下">14.5万円以下</option>
+									<option value="15万円以下">15万円以下</option>
+									<option value="15.5万円以下">15.5万円以下</option>
+									<option value="16万円以下">16万円以下</option>
+									<option value="16.5万円以下">16.5万円以下</option>
+									<option value="17万円以下">17万円以下</option>
+									<option value="17.5万円以下">17.5万円以下</option>
+									<option value="18万円以下">18万円以下</option>
+									<option value="18.5万円以下">18.5万円以下</option>
+									<option value="19万円以下">19万円以下</option>
+									<option value="19.5万円以下">19.5万円以下</option>
+									<option value="20万円以下">20万円以下</option>
+									<option value="25万円以下">25万円以下</option>
+									<option value="30万円以下">30万円以下</option>
+									<option value="40万円以下">40万円以下</option>
+									<option value="50万円以下">50万円以下</option>
+									<option value="100万円以下">100万円以下</option>
+									<option value="上限なし">上限なし</option>
+								</select>
+								<ol>
+									<li><label><input type="checkbox" name="" value="敷金・保証金なし">敷金・保証金なし</label></li>
+									<li><label><input type="checkbox" name="" value="礼金・敷引なし">礼金・敷引なし</label></li>
+									<li><label><input type="checkbox" name="" value="共益費・管理費込み">共益費・管理費込み</label></li>
+								</ol>
+							</dd>
+						</dl>
+						<button>検索する</button>
+					</form>
+					<form>
+						<dl>
+							<dt>間取り</dt>
+							<dd>
+								<ul>
+									<li><label><input type="checkbox" name="" value="1R">1R</label></li>
+									<li><label><input type="checkbox" name="" value="1K">1K</label></li>
+									<li><label><input type="checkbox" name="" value="1DK">1DK</label></li>
+									<li><label><input type="checkbox" name="" value="1LDK">1LDK</label></li>
+									<li><label><input type="checkbox" name="" value="2K">2K</label></li>
+									<li><label><input type="checkbox" name="" value="2DK">2DK</label></li>
+									<li><label><input type="checkbox" name="" value="2LDK">2LDK</label></li>
+									<li><label><input type="checkbox" name="" value="3K">3K</label></li>
+									<li><label><input type="checkbox" name="" value="3DK">3DK</label></li>
+									<li><label><input type="checkbox" name="" value="3LDK">3LDK</label></li>
+									<li><label><input type="checkbox" name="" value="4K">4K</label></li>
+									<li><label><input type="checkbox" name="" value="4DK">4DK</label></li>
+									<li><label><input type="checkbox" name="" value="4LDK以上">4LDK以上</label></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>面積</dt>
+							<dd>
+								<select name="下限">
+									<option value="下限なし">下限なし</option>
+									<option value="15㎡以上">15㎡以上</option>
+									<option value="20㎡以上">20㎡以上</option>
+									<option value="25㎡以上">25㎡以上</option>
+									<option value="30㎡以上">30㎡以上</option>
+									<option value="35㎡以上">35㎡以上</option>
+									<option value="40㎡以上">40㎡以上</option>
+									<option value="50㎡以上">50㎡以上</option>
+									<option value="60㎡以上">60㎡以上</option>
+									<option value="70㎡以上">70㎡以上</option>
+									<option value="80㎡以上">80㎡以上</option>
+									<option value="90㎡以上">90㎡以上</option>
+									<option value="100㎡以上">100㎡以上</option>
+									<option value="110㎡以上">110㎡以上</option>
+									<option value="120㎡以上">120㎡以上</option>
+									<option value="130㎡以上">130㎡以上</option>
+									<option value="140㎡以上">140㎡以上</option>
+									<option value="150㎡以上">150㎡以上</option>
+									<option value="160㎡以上">160㎡以上</option>
+									<option value="170㎡以上">170㎡以上</option>
+									<option value="180㎡以上">180㎡以上</option>
+									<option value="190㎡以上">190㎡以上</option>
+									<option value="200㎡以上">200㎡以上</option>
+								</select> ～
+								<select name="上限">
+									<option value="上限なし">上限なし</option>
+									<option value="15㎡以下">15㎡以下</option>
+									<option value="20㎡以下">20㎡以下</option>
+									<option value="25㎡以下">25㎡以下</option>
+									<option value="30㎡以下">30㎡以下</option>
+									<option value="35㎡以下">35㎡以下</option>
+									<option value="40㎡以下">40㎡以下</option>
+									<option value="50㎡以下">50㎡以下</option>
+									<option value="60㎡以下">60㎡以下</option>
+									<option value="70㎡以下">70㎡以下</option>
+									<option value="80㎡以下">80㎡以下</option>
+									<option value="90㎡以下">90㎡以下</option>
+									<option value="100㎡以下">100㎡以下</option>
+									<option value="110㎡以下">110㎡以下</option>
+									<option value="120㎡以下">120㎡以下</option>
+									<option value="130㎡以下">130㎡以下</option>
+									<option value="140㎡以下">140㎡以下</option>
+									<option value="150㎡以下">150㎡以下</option>
+									<option value="160㎡以下">160㎡以下</option>
+									<option value="170㎡以下">170㎡以下</option>
+									<option value="180㎡以下">180㎡以下</option>
+									<option value="190㎡以下">190㎡以下</option>
+									<option value="200㎡以下">200㎡以下</option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt>駅からの徒歩</dt>
+							<dd>
+								<select name="">
+									<option value="指定しない">指定しない</option>
+									<option value="1分以内">1分以内</option>
+									<option value="5分以内">5分以内</option>
+									<option value="7分以内">7分以内</option>
+									<option value="10分以内">10分以内</option>
+									<option value="15分以内">15分以内</option>
+									<option value="20分以内">20分以内</option>
+									<option value="指定しない">指定しない</option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt>築年数</dt>
+							<dd>
+								<select name="">
+									<option value="指定しない">指定しない</option>
+									<option value="新築">新築</option>
+									<option value="3年以内">3年以内</option>
+									<option value="5年以内">5年以内</option>
+									<option value="7年以内">7年以内</option>
+									<option value="10年以内">10年以内</option>
+									<option value="15年以内">15年以内</option>
+									<option value="20年以内">20年以内</option>
+									<option value="指定しない">指定しない</option>
+								</select>
+							</dd>
+						</dl>
+						<button>検索する</button>
+					</form>
+					<form>
+						<dl>
+							<dt>情報公開日</dt>
+							<dd>
+								<ul>
+									<li><label><input type="radio" name="" value="指定しない" checked="checked">指定しない</label></li>
+									<li><label><input type="radio" name="" value="本日">本日</label></li>
+									<li><label><input type="radio" name="" value="3日以内">3日以内</label></li>
+									<li><label><input type="radio" name="" value="1週間以内">1週間以内</label></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>画像・動画あり</dt>
+							<dd>
+								<ul>
+									<li><label><input type="checkbox" name="" value="画像あり">画像あり</label></li>
+									<li><label><input type="checkbox" name="" value="動画あり">動画あり</label></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>こだわり条件</dt>
+							<dd>
+								<ul>
+									<li><label><input type="checkbox" name="" value="ペット飼育可">ペット飼育可</label></li>
+									<li><label><input type="checkbox" name="" value="ペット専用設備">ペット専用設備</label></li>
+									<li><label><input type="checkbox" name="" value="楽器相談">楽器相談</label></li>
+									<li><label><input type="checkbox" name="" value="日当たり良好">日当たり良好</label></li>
+									<li><label><input type="checkbox" name="" value="閑静な住宅地">閑静な住宅地</label></li>
+									<li><label><input type="checkbox" name="" value="デザイナーズ">デザイナーズ</label></li>
+									<li><label><input type="checkbox" name="" value="リノベーション">リノベーション</label></li>
+									<li><label><input type="checkbox" name="" value="保証人不要">保証人不要</label></li>
+									<li><label><input type="checkbox" name="" value="事務所可">事務所可</label></li>
+									<li><label><input type="checkbox" name="" value="2人入居可">2人入居可</label></li>
+									<li><label><input type="checkbox" name="" value="バリアフリー">バリアフリー</label></li>
+									<li><label><input type="checkbox" name="" value="分割可">分割可</label></li>
+									<li><label><input type="checkbox" name="" value="分譲タイプ">分譲タイプ</label></li>
+									<li><label><input type="checkbox" name="" value="管理人常駐">管理人常駐</label></li>
+									<li><label><input type="checkbox" name="" value="眺望良好">眺望良好</label></li>
+									<li><label><input type="checkbox" name="" value="二世帯住宅">二世帯住宅</label></li>
+									<li><label><input type="checkbox" name="" value="フリーレント">フリーレント</label></li>
+									<li><label><input type="checkbox" name="" value="カードキー">カードキー</label></li>
+									<li><label><input type="checkbox" name="" value="オープンハウス">オープンハウス</label></li>
+									<li><label><input type="checkbox" name="" value="外国人可">外国人可</label></li>
+									<li><label><input type="checkbox" name="" value="ガスコンロ設置可">ガスコンロ設置可</label></li>
+									<li><label><input type="checkbox" name="" value="ルームシェア可">ルームシェア可</label></li>
+									<li><label><input type="checkbox" name="" value="学生向け">学生向け</label></li>
+									<li><label><input type="checkbox" name="" value="カップル向け">カップル向け</label></li>
+									<li><label><input type="checkbox" name="" value="女性向け">女性向け</label></li>
+									<li><label><input type="checkbox" name="" value="ファミリー向け">ファミリー向け</label></li>
+									<li><label><input type="checkbox" name="" value="室内洗濯機置場">室内洗濯機置場</label></li>
+									<li><label><input type="checkbox" name="" value="フローリング">フローリング</label></li>
+									<li><label><input type="checkbox" name="" value="ロフト付き">ロフト付き</label></li>
+									<li><label><input type="checkbox" name="" value="メゾネット">メゾネット</label></li>
+									<li><label><input type="checkbox" name="" value="ベランダ">ベランダ</label></li>
+									<li><label><input type="checkbox" name="" value="バルコニー">バルコニー</label></li>
+									<li><label><input type="checkbox" name="" value="ルーフバルコニー">ルーフバルコニー</label></li>
+									<li><label><input type="checkbox" name="" value="オール電化">オール電化</label></li>
+									<li><label><input type="checkbox" name="" value="エレベーター">エレベーター</label></li>
+									<li><label><input type="checkbox" name="" value="照明器具付き">照明器具付き</label></li>
+									<li><label><input type="checkbox" name="" value="駐輪場">駐輪場</label></li>
+									<li><label><input type="checkbox" name="" value="バイク置場あり">バイク置場あり</label></li>
+									<li><label><input type="checkbox" name="" value="家具・家電付き">家具・家電付き</label></li>
+									<li><label><input type="checkbox" name="" value="洗濯機置場有">洗濯機置場有</label></li>
+									<li><label><input type="checkbox" name="" value="外観タイル張り">外観タイル張り</label></li>
+									<li><label><input type="checkbox" name="" value="コンロ2口以上">コンロ2口以上</label></li>
+									<li><label><input type="checkbox" name="" value="食器洗い乾燥機">食器洗い乾燥機</label></li>
+									<li><label><input type="checkbox" name="" value="システムキッチン">システムキッチン</label></li>
+									<li><label><input type="checkbox" name="" value="対面式キッチン">対面式キッチン</label></li>
+									<li><label><input type="checkbox" name="" value="バス・トイレ別">バス・トイレ別</label></li>
+									<li><label><input type="checkbox" name="" value="追焚機能浴室">追焚機能浴室</label></li>
+									<li><label><input type="checkbox" name="" value="浴室乾燥機">浴室乾燥機</label></li>
+									<li><label><input type="checkbox" name="" value="温水洗浄便座">温水洗浄便座</label></li>
+									<li><label><input type="checkbox" name="" value="洗面台">洗面台</label></li>
+									<li><label><input type="checkbox" name="" value="洗髪洗面化粧台">洗髪洗面化粧台</label></li>
+									<li><label><input type="checkbox" name="" value="シャワー">シャワー</label></li>
+									<li><label><input type="checkbox" name="" value="独立洗面台">独立洗面台</label></li>
+									<li><label><input type="checkbox" name="" value="エアコン">エアコン</label></li>
+									<li><label><input type="checkbox" name="" value="床暖房">床暖房</label></li>
+									<li><label><input type="checkbox" name="" value="床下収納">床下収納</label></li>
+									<li class="w100"><label><input type="checkbox" name="" value="ウォークインクロゼット">ウォークインクロゼット</label></li>
+									<li class="w100"><label><input type="checkbox" name="" value="ウォークインシューズクロゼット">ウォークインシューズクロゼット</label></li>
+									<li><label><input type="checkbox" name="" value="収納豊富">収納豊富</label></li>
+									<li><label><input type="checkbox" name="" value="CS">CS</label></li>
+									<li><label><input type="checkbox" name="" value="BS">BS</label></li>
+									<li><label><input type="checkbox" name="" value="CATV">CATV</label></li>
+									<li><label><input type="checkbox" name="" value="光ファイバー">光ファイバー</label></li>
+									<li class="w100"><label><input type="checkbox" name="" value="インターネット対応">インターネット対応</label></li>
+									<li><label><input type="checkbox" name="" value="オートロック">オートロック</label></li>
+									<li class="w100"><label><input type="checkbox" name="" value="TVモニタ付インターホン">TVモニタ付インターホン</label></li>
+									<li><label><input type="checkbox" name="" value="宅配ボックス">宅配ボックス</label></li>
+									<li class="w100"><label><input type="checkbox" name="" value="24時間緊急通報システム">24時間緊急通報システム</label></li>
+									<li><label><input type="checkbox" name="" value="ディンプルキー">ディンプルキー</label></li>
+									<li><label><input type="checkbox" name="" value="防犯カメラ">防犯カメラ</label></li>
+									<li><label><input type="checkbox" name="" value="24時間有人管理">24時間有人管理</label></li>
+									<li><label><input type="checkbox" name="" value="フロントサービス">フロントサービス</label></li>
+									<li><label><input type="checkbox" name="" value="24時間ゴミ出し可">24時間ゴミ出し可</label></li>
+									<li><label><input type="checkbox" name="" value="住戸内覧可能">住戸内覧可能</label></li>
+									<li class="w100"><label><input type="checkbox" name="" value="コンシェルジュサービス">コンシェルジュサービス</label></li>
+									<li><label><input type="checkbox" name="" value="駐車場あり">駐車場あり</label></li>
+									<li><label><input type="checkbox" name="" value="2階以上">2階以上</label></li>
+									<li><label><input type="checkbox" name="" value="最上階">最上階</label></li>
+									<li><label><input type="checkbox" name="" value="南向き">南向き</label></li>
+									<li><label><input type="checkbox" name="" value="角部屋">角部屋</label></li>
+								</ul>
+							</dd>
+						</dl>
+						<button>検索する</button>
+					</form>
+				</div>
+				<div class="side_new">
+					<h4>新着物件</h4>
+					<ul>
+						<li>
+							<a href="#">
+								<dl>
+									<dt>○○○○○○○</dt>
+									<dd>
+										<ul class="plaice">
+											<li>4.8<span>万円</span></li>
+											<li>1LDK</li>
+										</ul>
+										<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+										<ol>
+											<li>アパート（居住用）</li>
+											<li>〇〇駅 徒歩〇〇分</li>
+										</ol>
+										<span class="btn">more</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<dl>
+									<dt>○○○○○○○</dt>
+									<dd>
+										<ul class="plaice">
+											<li>4.8<span>万円</span></li>
+											<li>1LDK</li>
+										</ul>
+										<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+										<ol>
+											<li>アパート（居住用）</li>
+											<li>〇〇駅 徒歩〇〇分</li>
+										</ol>
+										<span class="btn">more</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<dl>
+									<dt>○○○○○○○</dt>
+									<dd>
+										<ul class="plaice">
+											<li>4.8<span>万円</span></li>
+											<li>1LDK</li>
+										</ul>
+										<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+										<ol>
+											<li>アパート（居住用）</li>
+											<li>〇〇駅 徒歩〇〇分</li>
+										</ol>
+										<span class="btn">more</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<dl>
+									<dt>○○○○○○○</dt>
+									<dd>
+										<ul class="plaice">
+											<li>4.8<span>万円</span></li>
+											<li>1LDK</li>
+										</ul>
+										<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+										<ol>
+											<li>アパート（居住用）</li>
+											<li>〇〇駅 徒歩〇〇分</li>
+										</ol>
+										<span class="btn">more</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<dl>
+									<dt>○○○○○○○</dt>
+									<dd>
+										<ul class="plaice">
+											<li>4.8<span>万円</span></li>
+											<li>1LDK</li>
+										</ul>
+										<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+										<ol>
+											<li>アパート（居住用）</li>
+											<li>〇〇駅 徒歩〇〇分</li>
+										</ol>
+										<span class="btn">more</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<dl>
+									<dt>○○○○○○○</dt>
+									<dd>
+										<ul class="plaice">
+											<li>4.8<span>万円</span></li>
+											<li>1LDK</li>
+										</ul>
+										<%= image_tag 'commons/image_sample.png', :width => '216', :height => '162', :class => 'img' %>
+										<ol>
+											<li>アパート（居住用）</li>
+											<li>〇〇駅 徒歩〇〇分</li>
+										</ol>
+										<span class="btn">more</span>
+									</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</article>
+		</section>
+		<section id="link_area">
+			<div>
+				<ul>
+					<li><a href="#">求人情報</a></li>
+					<li><a href="#">プライバシーポリシー</a></li>
+					<li><a href="#">利用規約</a></li>
+					<li><a href="#">サイトマップ</a></li>
+				</ul>
+				<span><a href="#title_area">ページ上部へ戻る</a></span>
+			</div>
+		</section>
+
