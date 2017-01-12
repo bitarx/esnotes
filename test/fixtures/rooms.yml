@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fee: MyString
+  layout: MyString
+  exclusive_area: 1.5
+  floor_position: 1
+  delete_flg: 1
+
+two:
+  fee: MyString
+  layout: MyString
+  exclusive_area: 1.5
+  floor_position: 1
+  delete_flg: 1
