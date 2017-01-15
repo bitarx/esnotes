@@ -16,7 +16,14 @@ ActiveRecord::Schema.define(version: 20170112060855) do
     t.integer  "kind"
     t.string   "name"
     t.string   "zip_code"
-    t.string   "prefecture"
+    t.integer  "prefecture"
+    t.text     "address1",    limit: 65535
+    t.text     "address2",    limit: 65535
+    t.text     "traffic",     limit: 65535
+    t.string   "built"
+    t.string   "floor"
+    t.string   "structure"
+    t.string   "direction"
     t.text     "description", limit: 65535
     t.integer  "delete_flg",                default: 0
     t.datetime "created_at",                            null: false
