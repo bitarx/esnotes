@@ -204,7 +204,7 @@
 									<li><%= room.layout %></li>
 									<li><%= room.exclusive_area %>㎡</li>
 									<li><%= room.floor_position %>階</li>
-									<li><a href="#">詳細を見る</a></li>
+									<li><%= link_to '詳細を見る', rental_path(room.id) %></li>
 									<li><a href="#">追加する</a></li>
 								</ul>
 							<% end %>
