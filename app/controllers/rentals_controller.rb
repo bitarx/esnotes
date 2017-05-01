@@ -4,5 +4,8 @@ class RentalsController < ApplicationController
   end
 
   def show
+    @room = Room.joins(:rental).select("rentals.*, rooms.*").where(id: params[:id]);
+logger.debug('##################')
+logger.debug(@room.to_yaml)
   end
 end
