@@ -17,8 +17,8 @@ class AddCommonCostToRoom < ActiveRecord::Migration[5.0]
     add_column :rooms, :insurance, :string, after: :parking_fee, comment: '保険加入', :limit => 20
     add_column :rooms, :insurance_fee, :string, after: :insurance, comment: '保険料金', :limit => 50
     add_column :rooms, :typical_rental, :string, after: :insurance_fee, comment: '特有賃', :limit => 50
-    add_column :rooms, :transaction, :string, after: :typical_rental, comment: '取引形態', :limit => 20
-    add_column :rooms, :division, :string, after: :transaction, comment: '取引区分', :limit => 20
+    add_column :rooms, :transaction_form, :string, after: :typical_rental, comment: '取引形態', :limit => 20
+    add_column :rooms, :division, :string, after: :transaction_form, comment: '取引区分', :limit => 20
     add_column :rooms, :bondsman, :string, after: :division, comment: '保証人', :limit => 50
     add_column :rooms, :surety_company, :string, after: :bondsman, comment: '保証会社', :limit => 50
     add_column :rooms, :surety_company_detail, :string, after: :surety_company, comment: '保証会社詳細'

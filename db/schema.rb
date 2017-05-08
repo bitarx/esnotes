@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 20170507072553) do
     t.string   "insurance",             limit: 20,                             comment: "保険加入"
     t.string   "insurance_fee",         limit: 50,                             comment: "保険料金"
     t.string   "typical_rental",        limit: 50,                             comment: "特有賃"
-    t.string   "transaction",           limit: 20,                             comment: "取引形態"
+    t.string   "transaction_form",      limit: 20,                             comment: "取引形態"
     t.string   "division",              limit: 20,                             comment: "取引区分"
     t.string   "bondsman",              limit: 50,                             comment: "保証人"
     t.string   "surety_company",        limit: 50,                             comment: "保証会社"
