@@ -81,9 +81,9 @@
 							<li><%= @room[0].layout %></li>
 							<li><%= @room[0].exclusive_area %>㎡</li>
 							<li><%= @room[0].floor_position %>階</li>
-							<li>3,000円</li>
-							<li>1ヶ月</li>
-							<li>0ヶ月</li>
+							<li><%= @room[0].common_cost %>円</li>
+							<li><%= @room[0].deposit %></li>
+							<li><%= @room[0].key_money %></li>
 						</ul>
 					</div>
 					<a href="#" class="btn list">検討リストに追加</a>
@@ -208,18 +208,16 @@
 				<div class="detail_brief">
 					<div class="sub_title">
 						<h4>物件概要</h4>
-						<p>口口口口口口口口口口口口口口口口口口口口口口口口口口口口口口口</p>
+						<p><%= @room[0].description %></p>
 					</div>
 					<dl>
 						<dt>所在地</dt>
-						<dd>東京都北区滝野川2丁目</dd>
+						<dd><%= @room[0].address1 + @room[0].address2 %></dd>
 					</dl>
 					<dl>
 						<dt>交通</dt>
 						<dd>
-							・ 都営三田線「西巣鴨」駅 徒歩9分<br>
-							・ 南北線「王子」駅 徒歩12分<br>
-							・ 京浜東北線「王子」駅 徒歩14分
+							<%= @room[0].traffic %>
 						</dd>
 					</dl>
 					<dl>
