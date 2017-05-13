@@ -222,35 +222,35 @@
 					</dl>
 					<dl>
 						<dt>間取り / 詳細</dt>
-						<dd>1R　洋室 4.0畳</dd>
+						<dd><%= @room[0].layout %> <%= @room[0].layout_detail %></dd>
 					</dl>
 					<dl>
 						<dt>賃料</dt>
-						<dd>5.9万円</dd>
+						<dd><%= @room[0].fee %></dd>
 					</dl>
 					<dl>
 						<dt>管理費+共益費</dt>
-						<dd>4,000円</dd>
+						<dd><%= @room[0].common_cost %></dd>
 					</dl>
 					<dl>
-						<dt>敷金 / 保証金 / 礼金</dt>
-						<dd>0ヶ月 / - / 0ヶ月</dd>
+						<dt>敷金 / 礼金</dt>
+						<dd><%= @room[0].deposit %> / <%= @room[0].key_money %></dd>
 					</dl>
 					<dl>
-						<dt>償却 / 敷引</dt>
-						<dd>- / -</dd>
+						<dt>保証金 / 解約引</dt>
+						<dd><%= @room[0].security_money %> / <%= @room[0].cancel_reduction %></dd>
 					</dl>
 					<dl>
 						<dt>敷金積み増し</dt>
-						<dd>-</dd>
+						<dd><%= @room[0].deposit_addition %></dd>
 					</dl>
 					<dl>
 						<dt>面積</dt>
-						<dd>11.43㎡</dd>
+						<dd><%= @room[0].exclusive_area %>㎡</dd>
 					</dl>
 					<dl>
 						<dt>築年月（築年数） / 方位</dt>
-						<dd>2010年 4月（築6年） / 南</dd>
+						<dd><%= @room[0].built %> (<%= @room[0].built %>) / <%= @room[0].orientation %></dd>
 					</dl>
 					<dl>
 						<dt>契約期間</dt>
