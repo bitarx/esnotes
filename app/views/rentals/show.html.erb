@@ -254,19 +254,19 @@
 					</dl>
 					<dl>
 						<dt>契約期間</dt>
-						<dd>2年</dd>
+						<dd><%= @room[0].contract_term %> </dd>
 					</dl>
 					<dl>
 						<dt>種別 / 構造</dt>
-						<dd>アパート / 木造</dd>
+						<dd><%= @room[0].classification %> / <%= @room[0].structure %></dd>
 					</dl>
 					<dl>
 						<dt>部屋 / 所在階 / 階建</dt>
-						<dd>- / 1階 / 2階建</dd>
+						<dd><%= @room[0].room_number %> / <%= @room[0].floor_position %> / <%= @room[0].floor %></dd>
 					</dl>
 					<dl>
 						<dt>総戸数</dt>
-						<dd>-</dd>
+						<dd><%= @room[0].total_number %></dd>
 					</dl>
 					<dl>
 						<dt>現状 / 入居可能日</dt>
@@ -274,73 +274,43 @@
 					</dl>
 					<dl>
 						<dt>駐車場/料金</dt>
-						<dd>- / -</dd>
+						<dd><%= @room[0].parking %> / <%= @room[0].parking_fee %></dd>
 					</dl>
 					<dl>
 						<dt>保険加入 / 料金</dt>
-						<dd>有 / 13,000円</dd>
+						<dd><%= @room[0].insurance %> / <%= @room[0].insurance_fee %></dd>
 					</dl>
 					<dl>
 						<dt>保険名 / 保険期間</dt>
-						<dd>家財保険 / 2年</dd>
+						<dd><%= @room[0].insurance_name %> / <%= @room[0].insurance_term %></dd>
 					</dl>
 					<dl>
 						<dt>特優賃</dt>
-						<dd>-</dd>
-					</dl>
-					<dl>
-						<dt>権利金 / 雑費</dt>
-						<dd>- / -</dd>
+						<dd><%= @room[0].typical_rental %></dd>
 					</dl>
 					<dl>
 						<dt>取引形態 / 賃貸区分</dt>
-						<dd>仲介 / 一般</dd>
+						<dd><%= @room[0].transaction_form %> / <%= @room[0].division %></dd>
 					</dl>
 					<dl>
-						<dt>保証人代行義務</dt>
-						<dd>必加入</dd>
+						<dt>保証人</dt>
+						<dd><%= @room[0].bondsman %></dd>
 					</dl>
 					<dl>
 						<dt>保証会社</dt>
-						<dd>その他</dd>
+						<dd><%= @room[0].surety_company %></dd>
 					</dl>
 					<dl>
 						<dt>保証会社詳細</dt>
-						<dd>契約時：10,000円～</dd>
+						<dd><%= @room[0].surety_company_detail %></dd>
 					</dl>
 					<dl>
 						<dt>設備条件</dt>
-						<dd>日当たり良好仲介手数料無料室内洗濯機置場フローリング都市ガス公営水道公共排水電気有駐輪場バイク置場ありガスコンロバス・トイレ別シャワーエアコン光ファイバーオートロックTVモニタ付インターホン</dd>
+						<dd><%= @room[0].facility_condition %></dd>
 					</dl>
 					<dl>
 						<dt>備考</dt>
-						<dd>
-							ご負担いただく仲介手数料は、無料（0円） となっておりおトクです。<br>
-							多くの方にご好評の、清潔感のある室内が魅力的な賃貸物件です。<br>
-							実際にお部屋が見たい方、こちらはご案内可能です。<br>
-							ここまでご覧頂きありがとうございます♪<br>
-							当社は他社に負けない総合仲介店を目指し！<br>
-							各沿線の各不動産会社様へ直接ご挨拶に行き最新の物件を提供して頂いています！！<br>
-							最新の情報はインターネットに載せるまでにも時間がかかります★<br>
-							直接ご来店のお客様もしくはお問い合わせを頂いたお客様にはメールで情報を送ったりもしています☆<br>
-							当社は初期費用の分割可能！保証人がいない方もご安心ください！<br>
-							年中無休で首都圏全域のお部屋をご案内可能☆どんなご相談でもご安心ください！！<br>
-							難しいかな？と悩む前にお部屋探しのライフエージェントグループまで！！<br>
-							インターネットの手続き♪<br>
-							引越し業者手配♪<br>
-							家電の回収作業etc..<br>
-							お気軽に当社までお電話ください！！<br>
-							★各線主要駅より徒歩1分以内★<br><br>
-
-							毎日更新の当社グループ総合ホームページはこちら！！！<br>
-							＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br><br>
-
-							PC→→→ http://www.life-agents.jp/<br><br>
-
-							＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>
-							水曜定休：AM10:00～PM19:00まで元気に営業中！<br>
-							条件(その他)	クリーニング費3万2,400円
-						</dd>
+						<dd><%= @room[0].note %></dd>
 					</dl>
 				</div>
 				<div class="detail_contact" id="a_contact">

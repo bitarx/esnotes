@@ -53,6 +53,8 @@ ActiveRecord::Schema.define(version: 20170507072553) do
     t.string   "parking_fee",           limit: 20,                             comment: "駐車場料金"
     t.string   "insurance",             limit: 20,                             comment: "保険加入"
     t.string   "insurance_fee",         limit: 50,                             comment: "保険料金"
+    t.string   "insurance_name",        limit: 50,                             comment: "保険名"
+    t.string   "insurance_term",        limit: 20,                             comment: "保険期間"
     t.string   "typical_rental",        limit: 50,                             comment: "特有賃"
     t.string   "transaction_form",      limit: 20,                             comment: "取引形態"
     t.string   "division",              limit: 20,                             comment: "取引区分"
@@ -61,6 +63,11 @@ ActiveRecord::Schema.define(version: 20170507072553) do
     t.string   "surety_company_detail",                                        comment: "保証会社詳細"
     t.text     "facility_condition",    limit: 65535,                          comment: "設備条件"
     t.text     "note",                  limit: 65535,                          comment: "備考"
+    t.string   "condition",             limit: 50,                             comment: "現状"
+    t.string   "occupancy_day",         limit: 20,                             comment: "入居可能日"
+    t.integer  "staff_id",                                                     comment: "スタッフID"
+    t.text     "staff_comment",         limit: 65535,                          comment: "スタッフコメント"
+    t.string   "point",                                                        comment: "物件のポイント"
     t.integer  "is_deleted",                          default: 0
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
