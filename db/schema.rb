@@ -10,25 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170507072553) do
+ActiveRecord::Schema.define(version: 20170514010445) do
 
   create_table "rentals", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "kind"
     t.string   "name"
-    t.string   "zip_code",     limit: 20,                             comment: "郵便番号"
-    t.integer  "prefecture",                                          comment: "都道府県ID"
-    t.string   "address1",                                            comment: "住所１"
-    t.string   "address2",                                            comment: "住所２"
-    t.text     "traffic",      limit: 65535,                          comment: "交通"
-    t.string   "built",        limit: 50,                             comment: "築年月"
-    t.string   "floor",        limit: 20,                             comment: "建物階数"
-    t.string   "structure",    limit: 50,                             comment: "構造"
-    t.string   "direction",    limit: 20,                             comment: "方向"
-    t.string   "total_number", limit: 50,                             comment: "総戸数"
-    t.text     "description",  limit: 65535
-    t.integer  "is_deleted",                 default: 0
-    t.datetime "created_at",                             null: false
-    t.datetime "updated_at",                             null: false
+    t.string   "zip_code",      limit: 20,                             comment: "郵便番号"
+    t.integer  "prefecture_id",                                        comment: "都道府県ID"
+    t.integer  "city_id",                                              comment: "市区町村ID"
+    t.string   "address1",                                             comment: "住所１"
+    t.string   "address2",                                             comment: "住所２"
+    t.string   "built",         limit: 50,                             comment: "築年月"
+    t.string   "floor",         limit: 20,                             comment: "建物階数"
+    t.string   "structure",     limit: 50,                             comment: "構造"
+    t.string   "direction",     limit: 20,                             comment: "方向"
+    t.string   "total_number",  limit: 50,                             comment: "総戸数"
+    t.text     "description",   limit: 65535
+    t.integer  "is_deleted",                  default: 0
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
   end
 
   create_table "rooms", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -71,6 +71,15 @@ ActiveRecord::Schema.define(version: 20170507072553) do
     t.integer  "is_deleted",                          default: 0
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
+  end
+
+  create_table "traffics", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "rental_id",                           comment: "賃貸物件ID"
+    t.integer  "line_id",                             comment: "沿線ID"
+    t.integer  "station_id",                          comment: "駅ID"
+    t.integer  "is_deleted", default: 0
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
