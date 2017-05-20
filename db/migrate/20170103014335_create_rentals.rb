@@ -4,7 +4,7 @@ class CreateRentals < ActiveRecord::Migration[5.0]
       t.integer :kind
       t.string :name
       t.text :description
-      t.integer :delete_flg
+      t.boolean :is_deleted, default:false
 
       t.timestamps
     end

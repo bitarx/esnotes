@@ -5,7 +5,7 @@ class CreateRooms < ActiveRecord::Migration[5.0]
       t.float :exclusive_area, after: :fee, comment: '専有面積'
       t.integer :floor_position, after: :exclusive_area, comment: '所在階'
       t.string :layout, comment: '間取り', :limit => 80
-      t.integer :is_deleted, default: 0
+      t.boolean :is_deleted, default: false
       t.timestamps
     end
   end
